@@ -255,12 +255,12 @@ true America/Yellowknife
 false Antarctica/Casey
 false Antarctica/Davis
 false Antarctica/DumontDUrville
-true Antarctica/Macquarie
+false Antarctica/Macquarie
 false Antarctica/Mawson
-true Antarctica/McMurdo
+false Antarctica/McMurdo
 false Antarctica/Palmer
 false Antarctica/Rothera
-true Antarctica/South_Pole
+false Antarctica/South_Pole
 false Antarctica/Syowa
 true Antarctica/Troll
 false Antarctica/Vostok
@@ -376,29 +376,29 @@ false Atlantic/Reykjavik
 false Atlantic/South_Georgia
 false Atlantic/St_Helena
 false Atlantic/Stanley
-true Australia/ACT
-true Australia/Adelaide
+false Australia/ACT
+false Australia/Adelaide
 false Australia/Brisbane
-true Australia/Broken_Hill
-true Australia/Canberra
-true Australia/Currie
+false Australia/Broken_Hill
+false Australia/Canberra
+false Australia/Currie
 false Australia/Darwin
 false Australia/Eucla
-true Australia/Hobart
-true Australia/LHI
+false Australia/Hobart
+false Australia/LHI
 false Australia/Lindeman
-true Australia/Lord_Howe
-true Australia/Melbourne
-true Australia/NSW
+false Australia/Lord_Howe
+false Australia/Melbourne
+false Australia/NSW
 false Australia/North
 false Australia/Perth
 false Australia/Queensland
-true Australia/South
-true Australia/Sydney
-true Australia/Tasmania
-true Australia/Victoria
+false Australia/South
+false Australia/Sydney
+false Australia/Tasmania
+false Australia/Victoria
 false Australia/West
-true Australia/Yancowinna
+false Australia/Yancowinna
 true BDST
 false BDT
 false BNT
@@ -612,7 +612,7 @@ false KRAST
 false KRAT
 false KST
 false Kwajalein
-true LHDT
+false LHDT
 false LHST
 false LIGT
 false LINT
@@ -649,8 +649,8 @@ false NOVT
 false NPT
 false NST
 false NUT
-true NZ
-true NZ-CHAT
+false NZ
+false NZ-CHAT
 true NZDT
 false NZST
 false NZT
@@ -675,10 +675,10 @@ true PST8PDT
 false PWT
 true PYST
 false PYT
-true Pacific/Apia
-true Pacific/Auckland
+false Pacific/Apia
+false Pacific/Auckland
 false Pacific/Bougainville
-true Pacific/Chatham
+false Pacific/Chatham
 false Pacific/Chuuk
 true Pacific/Easter
 false Pacific/Efate
@@ -700,7 +700,7 @@ false Pacific/Marquesas
 false Pacific/Midway
 false Pacific/Nauru
 false Pacific/Niue
-true Pacific/Norfolk
+false Pacific/Norfolk
 false Pacific/Noumea
 false Pacific/Pago_Pago
 false Pacific/Palau
@@ -785,7 +785,7 @@ false Z
 false Zulu
 true posixrules
 </TimeZones>
-      <StartupTime>1617295406</StartupTime>
+      <StartupTime>1617469149</StartupTime>
     </root>
     <database id="2" parent="1" name="TestBase">
       <ObjectId>16393</ObjectId>
@@ -799,7 +799,7 @@ true posixrules
     <database id="4" parent="1" name="salon_helper">
       <ObjectId>24587</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>579</IntrospectionStateNumber>
+      <IntrospectionStateNumber>581</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <role id="5" parent="1" name="Irina">
@@ -851,7 +851,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>352</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>580</IntrospectionStateNumber>
+      <IntrospectionStateNumber>582</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="15" parent="4" name="btree">
