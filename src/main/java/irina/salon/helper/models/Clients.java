@@ -12,6 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Clients {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
     private String phone;

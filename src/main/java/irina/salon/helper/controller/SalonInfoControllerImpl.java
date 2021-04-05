@@ -5,6 +5,8 @@ import irina.salon.helper.models.Clients;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 public class SalonInfoControllerImpl implements SalonInfoController {
@@ -16,7 +18,8 @@ public class SalonInfoControllerImpl implements SalonInfoController {
     }
 
     @Override
-    public String test() {
-        return "Hello world!";
+
+    public List<Clients> getByName(String name){
+        return repository.findByName("test");
     }
 }
