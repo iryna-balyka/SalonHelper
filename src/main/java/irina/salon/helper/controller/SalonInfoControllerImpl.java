@@ -3,12 +3,17 @@ package irina.salon.helper.controller;
 import irina.salon.helper.models.ClientsRepository;
 import irina.salon.helper.models.Clients;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@Slf4j
 public class SalonInfoControllerImpl implements SalonInfoController {
     private final ClientsRepository repository;
 
@@ -20,6 +25,26 @@ public class SalonInfoControllerImpl implements SalonInfoController {
     @Override
 
     public List<Clients> getByName(String name){
-        return repository.findByName("test");
+        return repository.findByName(name);
     }
+
+//    @Override
+//
+//    public List<Clients> getById(int id){
+//        return repository.findByID(id);
+//    }
+
+    @Override
+    public List<Clients> getAll(){return repository.findAll();}
+
+
+//    public List<Clients> getByBirthday (@DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+//        log.info(date.toString());
+//        return List.of(new Clients());
+//        return repository.findByBirthday(date);
+//    }
+
+
+
+
 }
