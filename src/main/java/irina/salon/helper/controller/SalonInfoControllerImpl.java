@@ -7,9 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -28,21 +28,21 @@ public class SalonInfoControllerImpl implements SalonInfoController {
         return repository.findByName(name);
     }
 
-//    @Override
-//
-//    public List<Clients> getById(int id){
-//        return repository.findByID(id);
-//    }
+    @Override
+
+    public Optional<Clients> getById(int id){
+        return repository.findById(id);
+    }
 
     @Override
     public List<Clients> getAll(){return repository.findAll();}
 
 
-//    public List<Clients> getByBirthday (@DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+    public List<Clients> getByBirthday (@DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
 //        log.info(date.toString());
 //        return List.of(new Clients());
-//        return repository.findByBirthday(date);
-//    }
+        return repository.findByBirthdate(date);
+    }
 
 
 

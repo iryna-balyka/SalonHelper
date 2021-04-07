@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -18,6 +18,6 @@ public class Clients {
     private String name;
     private String surname;
     private String phone;
-    private Date birthdate;
+    private LocalDate birthdate;
 
 }
