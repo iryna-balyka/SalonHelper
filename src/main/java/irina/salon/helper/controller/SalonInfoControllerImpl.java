@@ -39,8 +39,6 @@ public class SalonInfoControllerImpl implements SalonInfoController {
 
 
     public List<Clients> getByBirthday (@DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
-//        log.info(date.toString());
-//        return List.of(new Clients());
         return repository.findByBirthdate(date);
     }
 
